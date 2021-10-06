@@ -1,8 +1,8 @@
-import flask
-from flask import request, jsonify
-import numpy as np
-import time
 import sys
+
+import flask
+import numpy as np
+from flask import jsonify
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
