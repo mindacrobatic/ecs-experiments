@@ -16,6 +16,12 @@ def home():
                    "prototype API for distant reading of science fiction novels.")
 
 
+@app.route('/cpu', methods=['GET'])
+def version():
+
+    return jsonify({"version": 2})
+
+
 @app.route('/health', methods=['GET'])
 def health():
     return jsonify("OK")
