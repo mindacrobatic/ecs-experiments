@@ -31,7 +31,7 @@ def cpu():
     return jsonify(k)
 
 
-@app.route('/cpu', methods=['GET'])
+@app.route('/version', methods=['GET'])
 def version():
 
     return jsonify({"version": 1})
