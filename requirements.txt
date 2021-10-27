@@ -10,6 +10,7 @@ gunicorn==20.1.0
 idna==3.2
 itsdangerous==2.0.1
 Jinja2==3.0.2
+joblib==1.1.0
 MarkupSafe==2.0.1
 numpy==1.21.2
 pipenv==2021.5.29
@@ -18,6 +19,11 @@ pycosat==0.6.3
 requests==2.26.0
 ruamel.yaml==0.17.16
 ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.1
+scipy==1.7.1
+six==1.16.0
+sklearn==0.0
+threadpoolctl==3.0.0
 urllib3==1.26.7
 virtualenv==20.8.1
 virtualenv-clone==0.5.7

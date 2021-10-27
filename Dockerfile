@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 ADD . .
 
-CMD gunicorn --bind 0.0.0.0:5000 api_2.wsgi:app
+CMD gunicorn --bind 0.0.0.0:5000 ml_api.wsgi:app

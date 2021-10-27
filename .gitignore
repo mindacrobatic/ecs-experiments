@@ -1,7 +1,6 @@
 .idea
 .ipynb_checkpoints
 *.ipynb
-api_1/__pycache__
-api_2/__pycache__
+ml_api/__pycache__
 venv
 
