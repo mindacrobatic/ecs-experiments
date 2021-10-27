@@ -43,17 +43,17 @@ def health():
 @app.route("/predict", methods=["GET"])
 def predict():
 
-    # Get the request body as a json string and convert it to a list
-    json_body = request.get_json()
-    list_body = json.loads(json_body)
-
-    # Health checks of the input
     try:
+        # Get the request body as a json string and convert it to a list
+        json_body = request.get_json()
+        list_body = json.loads(json_body)
+
+        # Health check the input
         assert isinstance(list_body, list)
         for item in list_body:
             assert isinstance(item, list)
-    except:
-        abort(400, 'Bad request. Wrong input format')
+    except Exception as e:
+        abort(400, "Bad request. {}".format(e))
     else:
         # Get the model prediction as class numbers
         prediction: np.array = clf.predict(list_body)
